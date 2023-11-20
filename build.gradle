@@ -1,0 +1,20 @@
+plugins {
+        id 'java'
+}
+group 'AutomationTesting'
+version '1.0-SNAPSHOT'
+
+//sourceCompatibility = 21
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+
+}
